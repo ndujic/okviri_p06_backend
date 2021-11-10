@@ -76,7 +76,7 @@ let poruke = [
 
     const podatak = req.body
     const id = Number(req.params.id)
-    console.log("Promjena važnosti poruke sa ID", id)
+    console.log("Promjena važnosti poruke sa ID:", id)
     poruke = poruke.map(p => p.id !== id ? p : podatak)
     console.log(poruke)   
     res.json(podatak)
